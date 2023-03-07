@@ -170,7 +170,7 @@ const musics = [
     {
         id: 15,
         number: '16',
-        image: './assets/img/songs/anhdaonhon.png',
+        image: './assets/img/songs/anhdaonhon.PNG',
         file: './assets/mp3/anhdaonhon.mp3',
         name: 'Anh Đã Ổn Hơn',
         singer: 'RPT MCK',
