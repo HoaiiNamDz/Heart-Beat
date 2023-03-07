@@ -571,7 +571,7 @@ closeBarBtn.addEventListener('click', () => {
         header.style.width = '97%';
         darkThemeBtn.style.display = 'none';
         rangeBar.style.width = '91%';
-        circleCD.style.left = 0;
+        circleCD.style.left = '5%';
     }
 })
 
@@ -588,7 +588,7 @@ openBarBtn.addEventListener('click', () => {
         header.style.width = '80%';
         darkThemeBtn.style.display = 'block';
         rangeBar.style.width = '84%';
-        circleCD.style.left = '127px';
+        circleCD.style.left = '';
     }
 })
 

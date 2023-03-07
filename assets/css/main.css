@@ -523,16 +523,8 @@
     height: 350px;
 }
 
-.circle__CD {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 84px;
-    left: 127px;
-    background-color: var(--white-color);
-    z-index: 1;
-    border-radius: 50%;
+.content__song-now-playing-disc-container-img {
+    position: relative;
 }
 
 .content__song-now-playing-disc-img {
@@ -542,6 +534,20 @@
     margin: 16px auto 24px;
     border-radius: 50%;
     box-shadow: 0 16px 12px rgba(0, 0, 0, 0.3);
+}
+
+.circle__CD {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background-color: var(--white-color);
+    z-index: 1;
+    border-radius: 50%;
+    transition: all 0.3s linear;
 }
 
 .content__song-now-playing-disc-song {
