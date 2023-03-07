@@ -1,0 +1,32 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-background-color: #FFF7EF;
+    --second-background-color: #303030;
+    --text-color: #1d274c;
+    --second-text-color: #ccc;
+    --icon-color: #90939f;
+
+    --header-height: 60px;
+    --catagory-width: 250px;
+    --album-img-height: 224px
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-background-color);
+}
+
+body.darkthemes {
+    background-color: #333;
+}

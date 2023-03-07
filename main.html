@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/faviconn/music-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Heart Beat</title>
+</head>
+<body>
+    <div class="page">
+        <i class="fa-solid fa-bars"></i>
+
+        <div class="catagory">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+            <div class="catagory__info">
+                <ul class="catagory__list">
+                    <div class="catagory__head">
+                        <img class="catagory__img" src="./assets/img/avatar.jpg" alt="">
+                        <a href="#" class="catagory__name">Nguyễn Hoài Nam</a>
+                        <a href="#" class="catagory__email">namnguyen14103@gmail.com</a>
+                    </div>
+                    <li class="catagory__item">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-solid fa-house"></i>
+                            <a href="" class="catagory__title">Home</a>     
+                        </div>
+                    </li>
+                    <li class="catagory__item catagory__item--active">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-solid fa-table-cells-large"></i>
+                            <a href="" class="catagory__title">Browse</a> 
+                        </div>
+                    </li>
+                    <li class="catagory__item">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-regular fa-file-image"></i>
+                            <a href="" class="catagory__title">Album</a>                         
+                        </div>
+                    </li>
+                    <li class="catagory__item">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-regular fa-user"></i>
+                            <a href="" class="catagory__title">Artist</a>    
+                        </div>
+                    </li>
+                    <li class="catagory__item">
+                        MY MUSIC
+                    </li>
+                    <li class="catagory__item">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-regular fa-clock"></i>
+                            <a href="" class="catagory__title">Recently Played</a> 
+                        </div>
+                    </li>
+                    <li class="catagory__item">
+                        <div class="catagory__item-wrapper">
+                            <i class="catagory__item-icon fa-regular fa-file"></i>
+                            <a href="" class="catagory__title">Local Files</a>   
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <span class="check">
+                <span class="ball"></span>
+            </span>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <div class="header__search">
+                    <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="header__search-input" placeholder="Search for song, artists etc ...">
+                </div>
+    
+                <div class="header__navbar">
+                    <div class="header__navbar-notify-wrapper">
+                        <i class="header__navbar-icon fa-regular fa-bell"></i>
+                    </div>
+                    <div class="header__navbar-settings-wrapper">
+                        <i class="header__navbar-icon fa-solid fa-gear"></i>
+                        <div class="header__navbar-settings">
+                            <a href="#" class="header__navbar-setting">Đăng xuất</a>
+                            <select class="header__navbar-settings-language">
+                                <option value="English">English</option>
+                                <option value="Tiếng Việt">Tiếng Việt</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="" class="header__navbar-premium">Upgrade Plan</a>
+                </div>
+            </div>
+            
+            <div class="head__content">
+                <div class="head__content-title">
+                    <span class="head__content-title-album">Topchart Albums</span>
+                    <div class="head__content-title-arrow">
+                        <i class="head__content-title-arrow-icon--prev fa-solid fa-chevron-left"></i>
+                        <i class="head__content-title-arrow-icon--next fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+    
+                <div class="head__content-list">
+                    <div class="head__content-list-container">
+                        <!-- Render từ JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content__popular-song">
+                    <div class="content__popular-song-head">
+                        <span class="content__popular-song-title">Most Popular</span>
+                        <span class="content__popular-song-number">16 Songs</span>
+                    </div>
+                    <div class="content__popular-song-list">
+                        <!-- Render từ JS -->
+                    </div>
+                
+                </div>
+    
+                <div class="content__song-now-playing">
+                    <div class="content__song-now-playing-head">
+                        <span class="content__song-now-playing-title">Now Playing</span>
+                        <span class="content__song-now-playing-number">2 Items on the list</span>
+                    </div>
+
+                    <div class="content__song-now-playing-body">
+                        <div class="content__song-now-playing-disc">
+                            <div class="circle__CD"></div>
+                            <img src="" alt="" class="content__song-now-playing-disc-img">
+                            <span class="content__song-now-playing-disc-song"></span>
+                            <span class="content__song-now-playing-disc-actor"></span>
+                            <input type="range" name="range" id="range" class="content__song-now-playing-disc-range" value="0" step="1" min="0" max="100">
+                            <div class="content__song-now-playing-disc-time">
+                                <span class="left-time">00:00</span>
+                                <span class="right-time">03:56</span>
+                                <audio src="" id="song"></audio>
+                            </div>
+                        </div>
+
+                        <ul class="content__song-now-playing-list">
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="content__song-now-playing-icon ti-loop"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="content__song-now-playing-icon fa-solid fa-backward"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="fa-solid fa-play icon-big"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="content__song-now-playing-icon fa-solid fa-forward"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <span class="content__song-now-playing-icons">
+                                    <i class="content__song-now-playing-icon fa-solid fa-random"></i>
+                                </span>
+                            </li>
+                            <li class="content__song-now-playing-item">
+                                <div class="content__song-now-playing-icon-volume">
+                                    <span class="content__song-now-playing-icons">
+                                        <i class="fas fa-volume-high"></i>
+                                    </span>
+                                    <input type="range" name="range__volume" id="range__volume" class="content__song-now-playing-range-volume" value ="1" min = "0" max="1" step="0.1" >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
