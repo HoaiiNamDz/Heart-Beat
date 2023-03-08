@@ -1,6 +1,6 @@
 const PLAYER_STORAGE_KEY = 'PLAYER';
 const closeBarBtn = document.querySelector('.fa-solid.fa-bars-staggered');
-const openBarBtn = document.querySelector('.fa-solid.fa-bars');
+const openBarBtn = document.querySelector('.open-catagory');
 const catagory = document.querySelector('.catagory');
 const catagoryWidth = catagory.clientWidth;
 const catagoryInfo = document.querySelector('.catagory__info');
@@ -553,44 +553,43 @@ volumeIcon.addEventListener('click', () => {
     }
 })
 
-
-
 //==============================================
 //                  SIDE BAR
 //==============================================
 const circleCD = document.querySelector('.circle__CD')
-closeBarBtn.addEventListener('click', () => {
-    const isClose = catagoryWidth === catagory.clientWidth;
+let isClose = catagoryWidth === catagory.clientWidth;
+closeBarBtn.onclick = () => {
     if(isClose) {
-        catagory.style.width = 0;
-        catagory.style.height = 0;
+        catagory.classList.add('not-active');
         catagoryInfo.style.opacity = 0;
         catagoryList.style.display = 'none';
+        catagoryList.style.width = 0;
         container.style.maxWidth = '97%';
-        container.style.marginLeft = '28px';
         header.style.width = '97%';
         darkThemeBtn.style.display = 'none';
-        rangeBar.style.width = '91%';
-        circleCD.style.left = '5%';
+        rangeBar.classList.add('active');
+        circleCD.style.left = '10%';
     }
-})
+}
 
-openBarBtn.addEventListener('click', () => {
-    const isOpen = catagoryWidth !== catagory.clientWidth;
-    if(isOpen) {
-        catagory.style.width = 'var(--catagory-width)';
-        catagory.style.height = '100vh';
+openBarBtn.onclick = () => {
+    if(isClose) {
+        catagory.classList.remove('not-active');
+        catagory.classList.remove('hide-on-mobile-and-tablet');
+        catagoryInfo.classList.remove('hide-on-mobile-and-tablet');
         catagoryInfo.style.opacity = 1;
         catagoryInfo.style.display = 'flex';
         catagoryList.style.display = 'block';
-        container.style.maxWidth = '80%';
-        container.style.marginLeft = 'auto';
-        header.style.width = '80%';
+        catagoryList.style.width = '';
+        catagoryList.classList.remove('hide-on-mobile-and-tablet');
+        container.style.maxWidth = '';
+        container.style.marginLeft = '';
+        header.style.width = '';
         darkThemeBtn.style.display = 'block';
-        rangeBar.style.width = '84%';
+        rangeBar.classList.remove('active');
         circleCD.style.left = '';
     }
-})
+}
 
 //==============================================
 //                  DARK THEME
@@ -664,3 +663,18 @@ heartBtns.forEach((heartBtns) => {
     }
     setConfig('isLike', isLike)
 })
+
+//==============================================
+//                  RESPONSIVE
+//==============================================
+// ON MOBILE    
+const searchIcon = document.querySelector('.header__search-icon');
+const headerSearchInputOnMobile = document.querySelector('.header__search-input--on-mobile')
+
+searchIcon.onclick = () => {
+    if(headerSearchInputOnMobile.classList.contains('active')) {
+        headerSearchInputOnMobile.classList.remove('active')
+    } else {
+        headerSearchInputOnMobile.classList.add('active')
+    }
+}

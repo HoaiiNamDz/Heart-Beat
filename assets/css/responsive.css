@@ -1,0 +1,157 @@
+/* PC */
+@media (min-width:64em){
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* MOBILE & TABLET */
+@media (max-width: 1024px) {
+    .circle__CD {
+        display: none;
+    }
+    .container {
+        max-width: 97%;
+        margin-left: 28px;
+    }
+    .catagory {
+        height: 100vh;
+    }
+    .hide-on-mobile-and-tablet {
+        display: none;
+    }
+    .catagory__list {
+        position: absolute;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .check {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header {
+        width: 97%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content__popular-song {
+        order: 2
+    }
+    .content__popular-song-item-info {
+        width: 100%;
+        overflow: hidden;
+    }
+    .content__popular-song-head, .content__song-now-playing-head {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .content__popular-song-list {
+        margin-top: 0;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .check {
+        bottom: 36%;
+    }
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .container {
+        margin-left: 0;
+    }
+    .open-catagory {
+        left: 33px;
+    }
+    .check {
+        bottom: 14%;
+    }
+    .header__search {
+        display: none;
+    }
+    .search-on-mobile {
+        margin-left: 64px;
+        padding: 26px 30px;
+    }
+    .header__search-input--on-mobile {
+        height: 30px;
+        width: 72%;
+        position: absolute;
+        top: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 999px;
+        outline: none;
+        border: 1px solid #dcdcdc;
+        padding-left: 14px;
+        font-size: 1.4rem;
+        animation: openSearch 0.4s linear;
+        display: none;
+    }
+    .header__search-input--on-mobile.active {
+        display: block;
+    }
+    @keyframes openSearch {
+        from {
+            opacity: 0;
+            top: 60px;
+        }
+        to {
+            opacity: 1;
+            top: 47px;
+        }
+    }
+    .header__navbar {
+        margin-right: 20px;
+    }
+    .header__navbar-premium {
+        display: none;
+    }
+    .header__content {
+        margin: 0 -44px;
+    }
+    .head__content-title {
+        margin: 28px 34px 20px 34px;
+    }
+    .content__song-now-playing-disc {
+        margin: 0 28px 16px;
+    }
+    .content__song-now-playing-disc-range {
+        width: 84%;
+    }
+    .content__song-now-playing-list {
+        margin: 0 20px;
+    }
+    .content__popular-song-list {
+        width: 106%;
+    }
+    .content__popular-song-item-icon:nth-child(3) {
+        display: none;
+    }
+    .content__popular-song-item-img {
+        margin: 0 6px;
+    }
+    .content__song-now-playing-disc-range.active {
+        width: 84%;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 400px ){
+    .content__popular-song-item-rank {
+        margin-left: 18px;
+    }
+    .content__popular-song-item-time {
+        display: none;
+    }
+}

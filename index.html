@@ -12,19 +12,20 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Heart Beat</title>
 </head>
 <body>
     <div class="page">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars open-catagory"></i>
 
-        <div class="catagory">
+        <div class="catagory hide-on-mobile-and-tablet">
             <div class="hamburger">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
 
-            <div class="catagory__info">
-                <ul class="catagory__list">
+            <div class="catagory__info hide-on-mobile-and-tablet">
+                <ul class="catagory__list hide-on-mobile-and-tablet">
                     <div class="catagory__head">
                         <img class="catagory__img" src="./assets/img/avatar.jpg" alt="">
                         <a href="#" class="catagory__name">Nguyễn Hoài Nam</a>
@@ -79,6 +80,10 @@
 
         <div class="container">
             <div class="header">
+                <div class="header__search--on-mobile hide-on-pc hide-on-tablet">
+                    <i class="header__search-icon fa-solid fa-magnifying-glass search-on-mobile"></i>
+                    <input type="text" class="header__search-input--on-mobile" placeholder="Search for song, artists etc ...">
+                </div>
                 <div class="header__search">
                     <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
                     <input type="text" class="header__search-input" placeholder="Search for song, artists etc ...">
